@@ -40,5 +40,12 @@ kubectl get pods
 kubectl get all --selector app=aspnet3core
 helm uninstall aspnet3release
 
+```
+
+*Log*
+
+```
+kubectl get pods
 kubectl describe pod aspnet3release-deployment-6556b59489-v4gj7
+kubectl -n kube-system logs -f podname
 ```
