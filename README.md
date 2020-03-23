@@ -1,8 +1,9 @@
 ## Helm
 
-```
+```bash
 brew install kubernetes-helm
 brew install kubectl
+brew install minikube
 ```
 
 ## Development
@@ -39,12 +40,11 @@ helm upgrade aspnet3release ./chart --values ./chart/production-values.yaml
 kubectl get pods
 kubectl get all --selector app=aspnet3core
 helm uninstall aspnet3release
-
 ```
 
 *Log*
 
-```
+```bash
 kubectl get pods
 kubectl describe pod aspnet3release-deployment-6556b59489-v4gj7
 kubectl -n kube-system logs -f podname
