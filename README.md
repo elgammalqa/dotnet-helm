@@ -1,6 +1,7 @@
 ## Helm
 
 ```bash
+brew install kubernetes-cli
 brew install kubernetes-helm
 brew install kubectl
 brew install minikube
